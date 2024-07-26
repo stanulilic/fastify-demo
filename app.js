@@ -149,7 +149,7 @@ const start = async () => {
     defineRoutes(fastify);
     await fastify.listen({
       port: parseInt(process.env.PORT || "3000", 10),
-      host: "0.0.0.0",
+      host: "localhost",
     });
     fastify.log.info(`Server listening at ${fastify.server.address().port}`);
   } catch (err) {
