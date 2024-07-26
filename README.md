@@ -1,6 +1,13 @@
 ## Testing the app
 
-To run the server:
+Create a `.env` file with the following contents:
+
+```
+PORT=3000
+DB_FILE=./blog.db
+```
+
+Once that is done,run the server:
 
 ```
 npm run dev
