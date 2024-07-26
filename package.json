@@ -1,0 +1,25 @@
+{
+  "name": "fastify-guide",
+  "version": "1.0.0",
+  "description": "",
+  "main": "demo.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --watch app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/formbody": "^7.4.0",
+    "@fastify/helmet": "^11.1.1",
+    "@fastify/view": "^9.1.0",
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "fastify": "^4.28.1",
+    "fastify-formbody": "^5.3.0",
+    "fastify-sqlite": "^1.1.0",
+    "sqlite3": "^5.1.7"
+  }
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= post.title %></title>
+    <link rel="stylesheet" type="text/css" href="/public/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="branding">
+          <h1>Blog</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/post/new">Create New Post</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container">
+      <h1><%= post.title %></h1>
+      <p><%= post.content %></p>
+      <a href="/">Back to Home</a>
+    </div>
+  </body>
+</html>

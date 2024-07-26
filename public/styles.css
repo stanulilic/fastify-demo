@@ -1,0 +1,130 @@
+/* public/styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 30px 0;
+  border-bottom: #77aaff 3px solid;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header li {
+  margin-left: 20px;
+}
+
+header #branding h1 {
+  margin: 0;
+}
+
+button {
+  background: #333;
+  color: #fff;
+  border: 0;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #77aaff;
+}
+
+ul.posts {
+  list-style: none;
+  padding: 0;
+}
+
+ul.posts li {
+  background: #fff;
+  margin: 10px 0;
+  padding: 10px;
+  border: #ccc 1px solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul.posts li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+ul.posts li a:hover {
+  color: #77aaff;
+}
+
+form.create-post-form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form.create-post-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+form input[type="text"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form textarea {
+  height: 150px;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #77aaff;
+}
