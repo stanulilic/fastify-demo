@@ -7,7 +7,7 @@ dotenv.config();
 
 const dbFile = process.env.DB_FILE || "./blog.db";
 
-async function setupDatabase() {
+export async function setupDatabase() {
   const db = await open({
     filename: dbFile,
     driver: sqlite3.Database,
@@ -25,7 +25,3 @@ async function setupDatabase() {
   console.log("Database and posts table created successfully");
   await db.close();
 }
-
-setupDatabase().catch((err) => {
-  console.error("Error setting up the database:", err);
-});

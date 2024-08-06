@@ -4,11 +4,11 @@ import fastifyView from "@fastify/view";
 import fastifyFormbody from "@fastify/formbody";
 import fastifyHelmet from "@fastify/helmet";
 import fastifyStatic from "@fastify/static";
-
 import { config } from "dotenv";
 import path from "path";
 import { fileURLToPath } from "url";
 import ejs from "ejs";
+import { setupDatabase } from "./database.js"; // Import the setupDatabase function
 
 // Load environment variables
 config();
@@ -32,6 +32,8 @@ const customSerializer = {
 
 // Create Fastify instance
 const createServer = async () => {
+  await setupDatabase(); // Ensure the database is set up before starting the server
+
   const fastify = Fastify({
     logger: {
       level: process.env.LOG_LEVEL || "info",

@@ -1,16 +1,26 @@
-## Testing the app
+### Testing the App
 
-Create a `.env` file with the following contents:
+To get started with testing the app, follow these steps:
 
+Install all necessary dependencies:
+
+```bash
+npm install
 ```
+
+Create a `.env` file in the root directory of your project with the following contents:
+
+```env
 PORT=3000
 DB_FILE=./blog.db
 ```
 
-Once that is done,run the server:
+Start the server:
 
-```
+```bash
 npm run dev
 ```
 
-From there, you can visit `http://localhost:3000/` in the browser of your choice.
+Once the server is running, open your browser and navigate to `http://localhost:3000/`.
+
+By following these steps, you can set up and run the server, allowing you to access the application locally in your browser.
